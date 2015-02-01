@@ -1,0 +1,16 @@
+document.write("<script src=\"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/angular.js\/1.3.9\/angular-route.min.js\"><\/script>");
+document.write("<script src=\"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/angular.js\/1.3.9\/angular.js\"><\/script>");
+document.write("<script src=\"http:\/\/cdnjs.cloudflare.com\/ajax\/libs\/d3\/3.5.3\/d3.min.js\"><\/script>");
+document.write("<script src=\"http:\/\/cdnjs.cloudflare.com\/ajax\/libs\/topojson\/1.6.9\/topojson.min.js\"><\/script>");
+document.write("<script src=\"lib\/datamaps.world.min.js\"><\/script>");
+document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.11.1\/jquery.min.js\"><\/script>");
+document.write("<script src=\"..\/..\/client\/js\/clientController.js\"><\/script>");
+document.write("<script src=\"js\/bootstrap.min.js\"><\/script>");
+document.write("<script src=\"lib\/fastclick.js\"><\/script>");
+document.write("<script src=\"lib\/d3.v3.min.js\"><\/script>");
+document.write("<script src=\"lib\/xcharts.js\"><\/script>");
+document.write("<script src=\"lib\/data.js\"><\/script>");
+document.write("<script src=\"lib\/summary.js\"><\/script>");
+document.write("<script src=\"js\/dashboard1.js\"><\/script>");
+document.write("<script src=\"js\/app.js\"><\/script>");
+document.write("<script src=\"js\/mtree.js\"><\/script>");

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html ng-app="countryApp">
+<head>
+    <script type="text/javascript" src="includes/head.js"></script>    
+    <title>sub1</title>
+    <script type="text/javascript" src="../js/clientController.js"></script> 
+</head>
+<body>
+    <div id="left-nav">
+        <script type="text/javascript" src="includes/left-nav.js"></script>
+    </div>
+    <div id="right-nav">
+        <script type="text/javascript" src="includes/right-nav.js"></script> 
+    </div>
+
+    <div id="container" class="transition">
+    <header class="header">
+        <script type="text/javascript" src="includes/header.js"></script>
+    </header>
+
+    <div ng-controller="CountryCtrl">
+        <div class="panel-group container" id="accordion">
+            <div class="panel panel-default" id="panel1">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-target="#collapseOne" href="#collapseOne">
+                    Table
+                    </a>
+                    </h4>
+                 </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <div class="table-container container ">
+                    Search:<input ng-model="query" type="text"/>
+                    <table>
+                    <tr>
+                    <th><a href="" ng-click="sortField ='name'; reverse = !reverse">Country</a></th>
+                    <th><a href="" ng-click="sortField = 'population'; reverse = !reverse">Population</a></th>
+                    <th>Graph</th>
+                    </tr>
+                    <tr ng-repeat="country in countries | filter:query | orderBy:sortField:reverse"
+                    ng-class-odd="'tableOdd'" 
+                    ng-class-even="'tableEven'" >
+                    <td>{{country.name}}</td>
+                    <td>{{country.population}}</td>
+                    <td><a data-toggle="collapse" data-target="#collapseTwo" href="#collapseTwo" class="collapsed"><button><i style="font-size:10px" class="fa fa-area-chart"></button></a></td>
+                    </tr>
+                    </table>
+                  </div>
+                </div>
+                </div>
+            </div>
+            <div class="panel panel-default" id="panel2">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-target="#collapseTwo" href="#collapseTwo" class="collapsed">
+                    Graph
+                    </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="container" id="content"></div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div> 
+<div class="footer-bottom">
+    <script type="text/javascript" src="includes/footer.js"></script>
+</div>
+
+<script type="text/javascript" src="includes/includeScripts.js"></script>
+
+</body>
+</html>
