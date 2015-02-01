@@ -1,7 +1,7 @@
 document.write("<script src=\"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/angular.js\/1.3.9\/angular-route.min.js\"><\/script>");
 document.write("<script src=\"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/angular.js\/1.3.9\/angular.js\"><\/script>");
-document.write("<script src=\"http:\/\/cdnjs.cloudflare.com\/ajax\/libs\/d3\/3.5.3\/d3.min.js\"><\/script>");
-document.write("<script src=\"http:\/\/cdnjs.cloudflare.com\/ajax\/libs\/topojson\/1.6.9\/topojson.min.js\"><\/script>");
+document.write("<script src=\"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/d3\/3.5.3\/d3.min.js\"><\/script>");
+document.write("<script src=\"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/topojson\/1.6.9\/topojson.min.js\"><\/script>");
 document.write("<script src=\"lib\/datamaps.world.min.js\"><\/script>");
 document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.11.1\/jquery.min.js\"><\/script>");
 document.write("<script src=\"..\/..\/client\/js\/clientController.js\"><\/script>");
