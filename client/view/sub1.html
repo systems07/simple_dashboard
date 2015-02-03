@@ -43,9 +43,9 @@
                     <th><a href="" ng-click="sortField = 'FIELD7'; reverse = !reverse">In(%)</a></th>
                     <th><a href="" ng-click="sortField = 'FIELD8'; reverse = !reverse">Out(%)</a></th>
                     <th><a href="" ng-click="sortField = 'FIELD9'; reverse = !reverse">Max In/Out(%)</a></th>
-                    <th><a href="" ng-click="sortField = 'FIELD10'; reverse = !reverse">Graph</a></th>
+                    <th>Graph</th>
                     </tr>
-                    <tr ng-repeat="country in countries | filter:query | orderBy:sortField:reverse"
+                    <tr ng-repeat="country in countries | filter:query | orderBy:FIELD1:reverse | orderBy:sortField:reverse"
                     ng-class-odd="'tableOdd'" 
                     ng-class-even="'tableEven'"
                     ng-click="country.$selected = !country.$selected; setSelected(this);"
